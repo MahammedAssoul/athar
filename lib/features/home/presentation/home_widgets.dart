@@ -339,11 +339,7 @@ class ImpactStats extends StatelessWidget {
 }
 
 class _Stat extends StatelessWidget {
-  const _Stat({
-    required this.value,
-    required this.label,
-    this.expanded = true,
-  });
+  const _Stat({required this.value, required this.label, this.expanded = true});
 
   final String value;
   final String label;

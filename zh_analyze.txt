@@ -1,0 +1,38 @@
+Analyzing athar...                                              
+
+   info • Unnecessary use of multiple underscores. Try using '_' • lib/features/campaigns/presentation/campaign_card.dart:108:29 • unnecessary_underscores
+   info • Unnecessary use of multiple underscores. Try using '_' • lib/features/campaigns/presentation/campaign_card.dart:108:33 • unnecessary_underscores
+   info • Unnecessary use of multiple underscores. Try using '_' • lib/features/campaigns/presentation/campaign_details_page.dart:137:27 • unnecessary_underscores
+   info • Unnecessary use of multiple underscores. Try using '_' • lib/features/campaigns/presentation/campaign_details_page.dart:137:31 • unnecessary_underscores
+warning • Unused import: '../../../core/theme/app_radius.dart'. Try removing the import directive • lib/features/donations/presentation/receipt_page.dart:6:8 • unused_import
+  error • The argument type 'Object?' can't be assigned to the parameter type 'CampaignCategory'.  • lib/features/home/presentation/home_page.dart:74:68 • argument_type_not_assignable
+  error • The named parameter 'icon' is required, but there's no corresponding argument. Try adding the required argument • lib/features/home/presentation/home_widgets.dart:51:13 • missing_required_argument
+  error • The named parameter 'child' isn't defined. Try correcting the name to an existing named parameter's name, or defining a named parameter with the name 'child' • lib/features/home/presentation/home_widgets.dart:54:15 • undefined_named_parameter
+  error • The constructor being called isn't a const constructor. Try removing 'const' from the constructor invocation • lib/features/home/presentation/home_widgets.dart:101:23 • const_with_non_const
+  error • Undefined class 'CampaignCategory'. Try changing the name to the name of an existing class, or creating a class with the name 'CampaignCategory' • lib/features/home/presentation/home_widgets.dart:137:23 • undefined_class
+  error • Undefined class 'CampaignCategory'. Try changing the name to the name of an existing class, or creating a class with the name 'CampaignCategory' • lib/features/home/presentation/home_widgets.dart:165:40 • undefined_class
+  error • Undefined name 'CampaignCategory'. Try correcting the name to one that is defined, or defining the name • lib/features/home/presentation/home_widgets.dart:166:40 • undefined_identifier
+  error • Undefined name 'CampaignCategory'. Try correcting the name to one that is defined, or defining the name • lib/features/home/presentation/home_widgets.dart:167:44 • undefined_identifier
+  error • Undefined name 'CampaignCategory'. Try correcting the name to one that is defined, or defining the name • lib/features/home/presentation/home_widgets.dart:168:38 • undefined_identifier
+  error • Undefined name 'CampaignCategory'. Try correcting the name to one that is defined, or defining the name • lib/features/home/presentation/home_widgets.dart:169:34 • undefined_identifier
+  error • Undefined name 'CampaignCategory'. Try correcting the name to one that is defined, or defining the name • lib/features/home/presentation/home_widgets.dart:170:25 • undefined_identifier
+  error • Undefined name 'CampaignCategory'. Try correcting the name to one that is defined, or defining the name • lib/features/home/presentation/home_widgets.dart:171:38 • undefined_identifier
+  error • Undefined name 'CampaignCategory'. Try correcting the name to one that is defined, or defining the name • lib/features/home/presentation/home_widgets.dart:172:46 • undefined_identifier
+  error • Undefined name 'CampaignCategory'. Try correcting the name to one that is defined, or defining the name • lib/features/home/presentation/home_widgets.dart:173:29 • undefined_identifier
+  error • Undefined name 'CampaignCategory'. Try correcting the name to one that is defined, or defining the name • lib/features/home/presentation/home_widgets.dart:174:43 • undefined_identifier
+warning • A value for optional parameter 'key' isn't ever given. Try removing the unused parameter • lib/features/home/presentation/home_widgets.dart:179:30 • unused_element_parameter
+  error • The constructor being called isn't a const constructor. Try removing 'const' from the constructor invocation • lib/features/home/presentation/home_widgets.dart:196:27 • const_with_non_const
+  error • The named parameter 'label' is required, but there's no corresponding argument. Try adding the required argument • lib/features/home/presentation/home_widgets.dart:322:15 • missing_required_argument
+  error • The named parameter 'value' is required, but there's no corresponding argument. Try adding the required argument • lib/features/home/presentation/home_widgets.dart:322:15 • missing_required_argument
+  error • Too many positional arguments: 0 expected, but 2 found. Try removing the extra positional arguments, or specifying the name for named arguments • lib/features/home/presentation/home_widgets.dart:322:21 • extra_positional_arguments_could_be_named
+  error • The named parameter 'label' is required, but there's no corresponding argument. Try adding the required argument • lib/features/home/presentation/home_widgets.dart:323:15 • missing_required_argument
+  error • The named parameter 'value' is required, but there's no corresponding argument. Try adding the required argument • lib/features/home/presentation/home_widgets.dart:323:15 • missing_required_argument
+  error • Too many positional arguments: 0 expected, but 2 found. Try removing the extra positional arguments, or specifying the name for named arguments • lib/features/home/presentation/home_widgets.dart:323:21 • extra_positional_arguments_could_be_named
+  error • The named parameter 'label' is required, but there's no corresponding argument. Try adding the required argument • lib/features/home/presentation/home_widgets.dart:324:15 • missing_required_argument
+  error • The named parameter 'value' is required, but there's no corresponding argument. Try adding the required argument • lib/features/home/presentation/home_widgets.dart:324:15 • missing_required_argument
+  error • Too many positional arguments: 0 expected, but 2 found. Try removing the extra positional arguments, or specifying the name for named arguments • lib/features/home/presentation/home_widgets.dart:324:21 • extra_positional_arguments_could_be_named
+warning • A value for optional parameter 'key' isn't ever given. Try removing the unused parameter • lib/features/home/presentation/home_widgets.dart:334:22 • unused_element_parameter
+   info • Use the null-aware marker '?' rather than a null check via an 'if'. Try using '?' • lib/features/profile/presentation/profile_page.dart:199:13 • use_null_aware_elements
+   info • 'activeColor' is deprecated and shouldn't be used. Use activeThumbColor instead. This feature was deprecated after v3.31.0-2.0.pre. Try replacing the use of the deprecated member with the replacement • lib/features/profile/presentation/profile_page.dart:222:11 • deprecated_member_use
+
+34 issues found. (ran in 1.0s)

@@ -1,11 +1,11 @@
 {
-    "name": "athar",
-    "short_name": "athar",
+    "name": "أثر — منصة العطاء الليبية",
+    "short_name": "أثر",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "background_color": "#0E7C5B",
+    "theme_color": "#0E7C5B",
+    "description": "منصة العطاء الليبية — تبرع آمن وشفاف للحملات الخيرية الموثوقة",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

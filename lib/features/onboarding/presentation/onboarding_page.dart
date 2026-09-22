@@ -5,6 +5,7 @@ import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_radius.dart';
 import '../../../core/theme/app_spacing.dart';
 import '../../../core/theme/app_typography.dart';
+import '../../../core/widgets/common_widgets.dart';
 import '../../../data/services/local_storage.dart';
 
 /// Onboarding page shown on first launch.
@@ -40,6 +41,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
         icon: Icons.volunteer_activism,
         title: s.onboardingTitle1,
         subtitle: s.onboardingSub1,
+        useLogo: true,
       ),
       _OnboardingItem(
         icon: Icons.verified_user,
@@ -119,11 +121,15 @@ class _OnboardingItem extends StatelessWidget {
     required this.icon,
     required this.title,
     required this.subtitle,
+    this.useLogo = false,
   });
 
   final IconData icon;
   final String title;
   final String subtitle;
+
+  /// Whether to show the brand logo instead of the icon.
+  final bool useLogo;
 
   @override
   Widget build(BuildContext context) {
@@ -132,14 +138,17 @@ class _OnboardingItem extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Container(
-            padding: const EdgeInsets.all(AppSpacing.xxl),
-            decoration: const BoxDecoration(
-              color: AppColors.primaryLight,
-              shape: BoxShape.circle,
+          if (useLogo)
+            const AppLogo(size: 120)
+          else
+            Container(
+              padding: const EdgeInsets.all(AppSpacing.xxl),
+              decoration: const BoxDecoration(
+                color: AppColors.primaryLight,
+                shape: BoxShape.circle,
+              ),
+              child: Icon(icon, size: 72, color: AppColors.primary),
             ),
-            child: Icon(icon, size: 72, color: AppColors.primary),
-          ),
           const SizedBox(height: AppSpacing.xxl),
           Text(
             title,

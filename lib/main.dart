@@ -14,6 +14,7 @@ import 'data/services/local_storage.dart';
 import 'features/auth/presentation/auth_cubit.dart';
 import 'features/auth/presentation/login_page.dart';
 import 'features/onboarding/presentation/onboarding_page.dart';
+import 'features/shared/presentation/splash_screen.dart';
 
 /// ─────────────────────────────────────────────────────────
 /// PHASE 1 — SINGLE MOCK SWITCH
@@ -134,7 +135,7 @@ class _StartupGateState extends State<StartupGate> {
   @override
   Widget build(BuildContext context) {
     if (_loading) {
-      return const Scaffold(body: Center(child: CircularProgressIndicator()));
+      return const SplashScreen();
     }
     if (!_onboardingDone) {
       return OnboardingPage(onDone: _onOnboardingDone);

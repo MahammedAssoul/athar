@@ -6,6 +6,66 @@ import '../theme/app_radius.dart';
 import '../theme/app_spacing.dart';
 import '../theme/app_typography.dart';
 
+/// The Athar brand logo image.
+///
+/// Loaded from `assets/logo.png`. The image is displayed on a white
+/// rounded background so it reads clearly on any surface. Falls back
+/// to a branded icon if the image is unavailable (e.g. in tests).
+class AppLogo extends StatelessWidget {
+  const AppLogo({
+    super.key,
+    this.size = 96,
+    this.showName = false,
+    this.backgroundColor = Colors.white,
+  });
+
+  final double size;
+
+  /// Whether to show the app name next to the logo.
+  final bool showName;
+
+  /// Background behind the logo image (white by default).
+  final Color backgroundColor;
+
+  @override
+  Widget build(BuildContext context) {
+    final s = AppStrings.of(context);
+    final logo = Container(
+      width: size,
+      height: size,
+      decoration: BoxDecoration(
+        color: backgroundColor,
+        borderRadius: BorderRadius.circular(AppRadius.lg),
+      ),
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(AppRadius.lg),
+        child: Image.asset(
+          'assets/logo.png',
+          height: size,
+          width: size,
+          fit: BoxFit.cover,
+          errorBuilder: (_, _, _) => Center(
+            child: Icon(
+              Icons.volunteer_activism,
+              size: size * 0.5,
+              color: AppColors.primary,
+            ),
+          ),
+        ),
+      ),
+    );
+    if (!showName) return logo;
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        logo,
+        const SizedBox(width: AppSpacing.md),
+        Text(s.appName, style: AppTypography.display),
+      ],
+    );
+  }
+}
+
 /// A rounded card with a subtle border used across the app.
 class AppCard extends StatelessWidget {
   const AppCard({

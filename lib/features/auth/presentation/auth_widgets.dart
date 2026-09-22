@@ -5,6 +5,7 @@ import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_radius.dart';
 import '../../../core/theme/app_spacing.dart';
 import '../../../core/theme/app_typography.dart';
+import '../../../core/widgets/common_widgets.dart';
 
 /// Shared widgets for the auth screens.
 class AuthWidgets {
@@ -23,18 +24,7 @@ class AuthHeader extends StatelessWidget {
     final s = AppStrings.of(context);
     return Column(
       children: [
-        Container(
-          padding: const EdgeInsets.all(AppSpacing.lg),
-          decoration: const BoxDecoration(
-            color: AppColors.primaryLight,
-            shape: BoxShape.circle,
-          ),
-          child: const Icon(
-            Icons.volunteer_activism,
-            size: 48,
-            color: AppColors.primary,
-          ),
-        ),
+        const AppLogo(size: 88),
         const SizedBox(height: AppSpacing.lg),
         Text(s.appName, style: AppTypography.display),
         const SizedBox(height: AppSpacing.xs),
